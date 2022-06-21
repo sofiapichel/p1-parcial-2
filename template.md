@@ -24,7 +24,7 @@ Inserten cualquier comentario u observacion que quieran mencionar.
 | Cada producto tiene una imagen | |
 | Cada producto tiene una categoria | |
 | Cada producto muestra toda la informacion anterior | |
-| Hay un boton que agrega el item al seleccionado al producto | |
+| Hay un boton que agrega el item seleccionado al carrito | |
 
 ### Carrito
 
