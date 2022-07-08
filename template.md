@@ -50,7 +50,7 @@ Inserten cualquier comentario u observacion que quieran mencionar.
 | Requisito | Estado | Observacion |
 | --- | --- | --- |
 | Hay una ventana modal para ver detalles del producto | | 
-| La ventana tiene un botom para agregar el item al carrito | |
+| La ventana tiene un boton para agregar el item al carrito | |
 | La ventana tiene un boton para cerrar la ventana | |
 
 ### Carrito
