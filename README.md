@@ -42,6 +42,7 @@
     - `scripts/index.js`: contiene algunas líneas de código para tomar como base para el desarrollo. Puede comenzar con un código desde cero, no es obligatorio partir de la referencia.
     - `favicon.ico`: un favicon para mostrar en el navegador. Se puede cambiar libremente.
     - `images/`: en este directorio se deben poner las imagenes para los productos.
+    - `productos.json`: archivo JSON con array de productos.
 
 ## Desarrollo mínimo y obligatorio (nota 4)
 
