@@ -12,7 +12,7 @@ let productos = [
     //     nombre: 'Producto',
     //     descripcion: 'Descripción del producto',
     //     precio: 0,
-    //     imagen: 'producto-de-ejemplo.jpg',
+    //     imagen: 'images/producto-de-ejemplo.jpg',
     //     categoría: 'Nombre de la categoría',
     // }
 ];
