@@ -1,10 +1,82 @@
 [
     {
         "id": 1,
-        "nombre": "Producto",
-        "descripcion": "Descripción del producto",
+        "nombre": "Iphone 13",
+        "descripcion": "Posee un chip super rápido, creando un gran salto en la duración dela batería.",
+        "precio": 560,
+        "imagen": "images/iphone_13.png",
+        "categoria": "Teléfono"
+    },
+    {
+        "id": 2,
+        "nombre": "Iphone 13 Pro",
+        "descripcion": "Un sistema de cámaras mucho más poderoso. Una pantalla con respuesta inmediata en cada interacción.",
+        "precio": 620,
+        "imagen": "images/iphone_13_pro.png",
+        "categoria": "Teléfono"
+    },
+    {
+        "id": 3,
+        "nombre": "Iphone 13 Pro Max",
+        "descripcion": "Esta edición poseeuna nueva pantalla OLED con ProMotion. Además, cuenta con el chip más rápido en un smartphone.",
+        "precio": 680,
+        "imagen": "images/iphone_13_pro_max.png",
+        "categoria": "Teléfono"
+    },
+    {
+        "id": 4,
+        "nombre": "Iphone 14",
+        "descripcion": "Se presenta el teléfono más pequeño de los iPhone de primera línea, midiendo 6,1 pulgadas.",
+        "precio": 700,
+        "imagen": "images/iphone_14.png",
+        "categoria": "Teléfono"
+    },
+    {
+        "id": 5,
+        "nombre": "Iphone 14 Pro",
+        "descripcion": "El iPhone 14 Pro te permite captar detalles increíbles gracias a su cámara gran angular.",
+        "precio": 760,
+        "imagen": "images/iphone_14_pro.png",
+        "categoria": "Teléfono"
+    },
+    {
+        "id": 6,
+        "nombre": "Iphone 15",
+        "descripcion": "El nuevo e innovador diseño cuenta con una parte posterior de vidrio con infusión de color",
+        "precio": 800,
+        "imagen": "images/iphone_15.png",
+        "categoria": "Teléfono"
+    },
+    {
+        "id": 7,
+        "nombre": "Iphone 15 Pro",
+        "descripcion": "El iPhone 15 Pro es el primer iPhone diseñado con titanio de calidad aeroespacial.",
+        "precio": 890,
+        "imagen": "images/iphone_15_pro.png",
+        "categoria": "Teléfono"
+    },
+    {
+        "id": 8,
+        "nombre": "Airpods",
+        "descripcion": "Auriculares resistentes al polvo, al sudor y al agua al hacer ejercicio o practicar deportes no acuáticos. Poseen clasificación IP54.",
         "precio": 0,
-        "imagen": "images/producto-de-ejemplo.jpg",
-        "categoría": "Nombre de la categoría"
+        "imagen": "images/AIRPODS-PRO.jpeg",
+        "categoria": "Auricular"
+    },
+    {
+        "id": 9,
+        "nombre": "Apple Watch SE",
+        "descripcion": "Reloj smart que posee funciones avanzandas orientadas a la salúd y el bienestar del usuario.",
+        "precio": 0,
+        "imagen": "images/reloj.jpg",
+        "categoria": "Reloj"
+    },
+    {
+        "id": 10,
+        "nombre": "Apple TV",
+        "descripcion": "Dispositivo que permite convertir cualquier televisor en uno inteligente, puediendo conectar distintas plataformas de streaming, música, juegos, etc.",
+        "precio": 0,
+        "imagen": "images/apple_tv.png",
+        "categoria": "Software"
     }
 ]

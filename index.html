@@ -3,16 +3,16 @@
     <head>
         <meta charset="utf-8" />
         <!-- Reemplazar por los datos que correspondan -->
-        <title>Programación I | Parcial 2 | APELLIDO/S</title>
+        <title>Programación I | Parcial 2 | PICHEL</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
         <link rel="shortcut icon" href="favicon.ico" />
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
         <script src="index.js"></script>
     </head>
     <body>
         <header>
             <!-- Reemplazar por los datos que correspondan -->
-            <h1>Programación I | Parcial 2 | APELLIDO/S | Mi carrito</h1>
+            <h1>Programación I | Parcial 2 | PICHEL | Mi carrito</h1>
         </header>
         <main>
             <!-- Este es un ejemplo de contenedor de carrito -->
@@ -20,14 +20,24 @@
                 <p><span>0</span> ítems agregados</p>
                 <p>$<span>0</span> es el total</p>
                 <!-- Estos filtros pueden ser links, botones, menu desplegable. Sugiero generarlos dinamicamente -->
-                <p>Filtrar por <a href="#">Categoría 1</a> | <a href="#">Categoría 2</a> | <a href="#">Categoría 3</a></p>
+                <p>Filtrar por 
+                    <a href="#" class="filtro-categoria">Teléfono</a> |
+                    <a href="#" class="filtro-categoria">Auricular</a> | 
+                    <a href="#" class="filtro-categoria">Software</a> |
+                    <a href="#" class="filtro-categoria">Reloj</a> |
+                    <a href="#" class="filtro-categoria">Sin categoria</a> 
+                </p>
                 <button>Ver carrito</button>
             </div>
             <h2>Productos</h2>
             
             <div id="productos">
+              
                 <!-- Aca irian los productos -->
             </div>
+
+            <script src="scripts/producto.js"></script>
+            <script src="scripts/index.js"></script>
 
         </main>
 
@@ -39,8 +49,7 @@
                 </li>
                 <li>Programación 1</li>
                 <li>
-                    <!-- Reemplazar por el link del repositorio de GitHub -->
-                    <a href="#">URL del repo de GitHub</a>
+                    <a href="https://github.com/sofiapichel/p1-parcial-2">URL del repo de GitHub</a>
                 </li>
             </ul>
         </footer>

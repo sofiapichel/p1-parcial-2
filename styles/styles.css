@@ -271,7 +271,7 @@ input[type='submit']:hover {
 /**	Carrito */
 #minicarrito {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1em;
@@ -279,34 +279,7 @@ input[type='submit']:hover {
     background: rgba(19, 79, 92, 0.25);
 }
 
-#productos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1em 0;
-    width: 100%;
-    padding: 1em;
-    background: rgba(19, 79, 92, 0.25);
-}
 
-#productos div {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 90%;
-    padding: 1em;
-}
-
-#productos img {
-    width: 90%;
-    margin: 1em 5%;
-}
-
-#productos div div {
-    padding: 0;
-}
 
 #productos h3,
 #productos p {
@@ -383,18 +356,36 @@ input[type='submit']:hover {
     font-size: 1em;
 }
 
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product_card {
+    width: 300px; 
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+
+.product_card img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px; 
+}
+
 /**
  *	Web
  */
 @media screen and (min-width: 960px) {
-    #productos {
-        flex-direction: row;
-    }
-
-    #productos div {
-        width: 30%;
-    }
-
     /**	Footer */
     footer ul {
         flex-direction: row;
