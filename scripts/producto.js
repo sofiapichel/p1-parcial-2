@@ -14,7 +14,8 @@ class Producto {
       this.id = id;
       this.categoria = categoria;
       this.imagen= imagen;
-      this.precio = precio;
+      this.precio = parseFloat(precio);
+      this.cantidad = 1; 
     }
   
     /**
@@ -28,10 +29,11 @@ class Producto {
             <div class="product_card">
               <img src="${this.imagen}"> 
               <h3 class="">${this.nombre}</h3>
-              <p class="">${this.descripcion}</p>
-              <p class="">$${this.precio}</p>
+              <p style="margin-bottom:20px;">${this.descripcion}</p>
+              <p class="precio">$${this.precio}</p>
+                 <button class="btn-add-to-cart" data-id="${this.id}" data-toggle="modal" data-target="#carritoModal">Agregar al Carrito</button>
               <hr style="border:1px solid white;">
-              <p class="">${this.categoria}</p>
+              <p >${this.categoria}</p>
             </div>
           </div> `;
       

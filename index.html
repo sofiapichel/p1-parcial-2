@@ -1,58 +1,66 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <!-- Reemplazar por los datos que correspondan -->
-        <title>Programación I | Parcial 2 | PICHEL</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <link rel="stylesheet" href="styles/styles.css" />
-        <script src="index.js"></script>
-    </head>
-    <body>
-        <header>
-            <!-- Reemplazar por los datos que correspondan -->
-            <h1>Programación I | Parcial 2 | PICHEL | Mi carrito</h1>
-        </header>
-        <main>
-            <!-- Este es un ejemplo de contenedor de carrito -->
-            <div id="carrito">
-                <p><span>0</span> ítems agregados</p>
-                <p>$<span>0</span> es el total</p>
-                <!-- Estos filtros pueden ser links, botones, menu desplegable. Sugiero generarlos dinamicamente -->
-                <p>Filtrar por 
-                    <a href="#" class="filtro-categoria">Teléfono</a> |
-                    <a href="#" class="filtro-categoria">Auricular</a> | 
-                    <a href="#" class="filtro-categoria">Software</a> |
-                    <a href="#" class="filtro-categoria">Reloj</a> |
-                    <a href="#" class="filtro-categoria">Sin categoria</a> 
-                </p>
-                <button>Ver carrito</button>
+<head>
+    <meta charset="utf-8" />
+    <title>Programación I | Parcial 2 | PICHEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Programación I | Parcial 2 | PICHEL | Mi carrito</h1>
+    </header>
+    <main>
+        <div id="carrito">
+            <p><span>0</span> ítems agregados</p>
+            <p>$<span>0</span> es el total</p>
+            <p>Filtrar por
+                <a href="#" class="filtro-categoria">Teléfono</a> |
+                <a href="#" class="filtro-categoria">Auricular</a> |
+                <a href="#" class="filtro-categoria">Software</a> |
+                <a href="#" class="filtro-categoria">Reloj</a> |
+                <a href="#" class="filtro-categoria">Todas las categorias</a>
+            </p>
+            <button id="verCarritoBtn">Ver carrito</button>
+        </div>
+        <h2>Productos</h2>
+        <div id="productos">
+            <!-- Productos -->
+        </div>
+
+        <!-- Modal -->
+        <div id="modalCarrito" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <div class="modal-body" id="modalBody">
+                    <!-- Contenido del carrito -->
+                </div>
+                <div class="modal-footer">
+                    <span style="font-size: 2rem; color: black;" id="carrito-total">Total: $0.00</span>
+                </div>
+                <button id="cerrarModal" class="btn btn-secondary">Cerrar</button>
             </div>
-            <h2>Productos</h2>
-            
-            <div id="productos">
-              
-                <!-- Aca irian los productos -->
-            </div>
+        </div>
+    </main>
 
-            <script src="scripts/producto.js"></script>
-            <script src="scripts/index.js"></script>
+    <footer>
+        <ul>
+            <li>Profesor Fabrizio Carlassara</li>
+            <li>
+                <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
+            </li>
+            <li>Programación 1</li>
+            <li>
+                <a href="https://github.com/sofiapichel/p1-parcial-2"  target="_blank"s>URL del repo de GitHub</a>
+            </li>
+        </ul>
+    </footer>
 
-        </main>
-
-        <footer>
-            <ul>
-                <li>Profesor Fabrizio Carlassara</li>
-                <li>
-                    <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
-                </li>
-                <li>Programación 1</li>
-                <li>
-                    <a href="https://github.com/sofiapichel/p1-parcial-2">URL del repo de GitHub</a>
-                </li>
-            </ul>
-        </footer>
-        
-    </body>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/producto.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/carrito.js"></script>
+</body>
 </html>

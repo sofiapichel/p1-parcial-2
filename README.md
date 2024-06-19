@@ -51,7 +51,7 @@ Cualquier faltante de los requisitos que se presentan a continuación, hará que
 - Productos:
     <!-- - Armar el listado de productos obteniendo la información de cada uno de un Array de objectos. Como mínimo 9 productos. -->
     <!-- - Se deben contemplar como mínimo 3 categorías de productos. -->
-    - Cada producto debe tener como mínimo: Nombre, descripción, precio, una imagen y categoría. Toda esta información se debe mostrar por cada ítem.
+    <!-- - Cada producto debe tener como mínimo: Nombre, descripción, precio, una imagen y categoría. Toda esta información se debe mostrar por cada ítem. -->
     - Debe tener un botón que permita agregar el ítem al carrito.
     <!-- - Se deben poder filtrar los productos por categoría. -->
 
