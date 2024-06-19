@@ -59,7 +59,7 @@
         "id": 8,
         "nombre": "Airpods",
         "descripcion": "Auriculares resistentes al polvo, al sudor y al agua al hacer ejercicio o practicar deportes no acuáticos. Poseen clasificación IP54.",
-        "precio": 0,
+        "precio": 200,
         "imagen": "images/AIRPODS-PRO.jpeg",
         "categoria": "Auricular"
     },
@@ -67,7 +67,7 @@
         "id": 9,
         "nombre": "Apple Watch SE",
         "descripcion": "Reloj smart que posee funciones avanzandas orientadas a la salúd y el bienestar del usuario.",
-        "precio": 0,
+        "precio": 200,
         "imagen": "images/reloj.jpg",
         "categoria": "Reloj"
     },
@@ -75,7 +75,7 @@
         "id": 10,
         "nombre": "Apple TV",
         "descripcion": "Dispositivo que permite convertir cualquier televisor en uno inteligente, puediendo conectar distintas plataformas de streaming, música, juegos, etc.",
-        "precio": 0,
+        "precio": 900,
         "imagen": "images/apple_tv.png",
         "categoria": "Software"
     }
