@@ -49,17 +49,17 @@
 Cualquier faltante de los requisitos que se presentan a continuación, hará que la entrega se considere desaprobada, aunque haya hecho cosas no solicitadas o del punto siguiente. Esta condición es mínima e innegociable.
 
 - Productos:
-    - Armar el listado de productos obteniendo la información de cada uno de un Array de objectos. Como mínimo 9 productos.
-    - Se deben contemplar como mínimo 3 categorías de productos.
-    - Cada producto debe tener como mínimo: Nombre, descripción, precio, una imagen y categoría. Toda esta información se debe mostrar por cada ítem.
+    <!-- - Armar el listado de productos obteniendo la información de cada uno de un Array de objectos. Como mínimo 9 productos. -->
+    <!-- - Se deben contemplar como mínimo 3 categorías de productos. -->
+    <!-- - Cada producto debe tener como mínimo: Nombre, descripción, precio, una imagen y categoría. Toda esta información se debe mostrar por cada ítem. -->
     - Debe tener un botón que permita agregar el ítem al carrito.
-    - Se deben poder filtrar los productos por categoría.
+    <!-- - Se deben poder filtrar los productos por categoría. -->
 
 - Carrito:
     - Debe haber un área del sitio que muestre (mientras el usuario interactúa con el sitio) la cantidad de productos agregados al carrito y el monto total a pagar.
 
-- Clases:
-    - Debe implementarse al menos una clase para resolver el trabajo. Esta clase debe tener métodos y propiedades apropiadas.
+<!-- - Clases:
+    - Debe implementarse al menos una clase para resolver el trabajo. Esta clase debe tener métodos y propiedades apropiadas. -->
 
 - DOM:
     - El manejo de DOM es obligatorio. La creacion de elementos de HTML y aplicacion de estilos debe ser dinamica a traves de los metodos del document (`createElement`, `append`, `prepend`, `setAttribute`, `before`, `after`, `parentElement`, etc).  

@@ -52,7 +52,7 @@ h1,
 h2,
 h3 {
     font-family: 'Montserrat';
-    font-size: 3.6em;
+    font-size: 1rem;
     line-height: 1.5;
     font-weight: 700;
     text-align: center;
@@ -87,7 +87,7 @@ ol {
 p,
 ul li,
 ol li {
-    font-size: 2.4em;
+    font-size: 1.5em;
     line-height: 1.5;
     text-align: left;
     color: #134f5c;
@@ -223,8 +223,13 @@ hr {
     margin: 1em 0%;
     width: 100%;
     height: 0.1em;
+    color: black;
 }
 
+.precio{
+    color: black;
+    font-weight: 600;
+}
 /**	Footer */
 footer {
     display: flex;
@@ -271,7 +276,7 @@ input[type='submit']:hover {
 /**	Carrito */
 #minicarrito {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1em;
@@ -279,34 +284,7 @@ input[type='submit']:hover {
     background: rgba(19, 79, 92, 0.25);
 }
 
-#productos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1em 0;
-    width: 100%;
-    padding: 1em;
-    background: rgba(19, 79, 92, 0.25);
-}
 
-#productos div {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 90%;
-    padding: 1em;
-}
-
-#productos img {
-    width: 90%;
-    margin: 1em 5%;
-}
-
-#productos div div {
-    padding: 0;
-}
 
 #productos h3,
 #productos p {
@@ -314,87 +292,73 @@ input[type='submit']:hover {
     text-align: center;
 }
 
-.modal {
-    position: fixed;
-    z-index: 1;
+#productos {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal a {
-    text-decoration: none;
-    color: #d0e0e3;
-}
-
-.modal a.cerrar {
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
-    top: 1em;
-    right: 1em;
-    border-radius: 2.5em;
-    width: 5em;
-    height: 5em;
-    background-color: rgba(255, 255, 255, 0.9);
-    font-size: 1em;
-    font-weight: 400;
-    text-align: center;
-    color: #1a4a5e;
+}
+
+.product_card {
+    width: 300px; 
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    height: 600px;
+}
+
+
+.product_card img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px; 
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
     text-decoration: none;
 }
 
-.modal a.cerrar:hover {
-    background-color: #1a4a5e;
-    color: rgba(255, 255, 255, 0.9);
-}
-
-.modal img {
-    height: 30%;
-}
-
-.modal h3,
-.modal p,
-.modal li {
-    margin: 0;
-    text-align: center;
-    color: #d0e0e3;
-}
-
-.modal li {
-    display: flex;
-    justify-content: space-around;
-    margin: 0.25em 0;
-    width: 90%;
-}
-
-.modal li span {
-    font-size: 1em;
-}
 
 /**
  *	Web
  */
 @media screen and (min-width: 960px) {
-    #productos {
-        flex-direction: row;
-    }
-
-    #productos div {
-        width: 30%;
-    }
-
     /**	Footer */
     footer ul {
         flex-direction: row;
