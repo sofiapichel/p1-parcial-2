@@ -23,25 +23,59 @@ class Producto {
      * el producto
      * 
      */
-    toString() {
-      return `
-          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
-            <div class="product_card">
-              <img src="${this.imagen}"> 
-              <h3 class="">${this.nombre}</h3>
-              <p style="margin-bottom:20px;">${this.descripcion}</p>
-              <p class="precio">$${this.precio}</p>
-                 <button class="btn-add-to-cart" data-id="${this.id}" data-toggle="modal" data-target="#carritoModal">Agregar al Carrito</button>
-              <hr style="border:1px solid white;">
-              <p >${this.categoria}</p>
-            </div>
-          </div> `;
-      
-    }
-  
-    show(etiqueta) {
-      document.querySelector(etiqueta).innerHTML += this.toString();
-    }
+    toElement() {
+      const productDiv = document.createElement('div');
+      productDiv.classList.add('col-sm-12', 'col-md-6', 'col-lg-4', 'mb-4');
+
+      const card = document.createElement('div');
+      card.classList.add('product_card');
+
+      const img = document.createElement('img');
+      img.src = this.imagen;
+
+      const h3 = document.createElement('h3');
+      h3.textContent = this.nombre;
+
+      const pDescripcion = document.createElement('p');
+      pDescripcion.textContent = this.descripcion;
+      pDescripcion.style.marginBottom = '20px';
+
+      const pPrecio = document.createElement('p');
+      pPrecio.classList.add('precio');
+      pPrecio.textContent = `$${this.precio}`;
+
+      const button = document.createElement('button');
+      button.classList.add('btn-add-to-cart');
+      button.dataset.id = this.id;
+      button.dataset.toggle = 'modal';
+      button.dataset.target = '#carritoModal';
+      button.textContent = 'Agregar al Carrito';
+
+      const hr = document.createElement('hr');
+      hr.style.border = '1px solid white';
+
+      const pCategoria = document.createElement('p');
+      pCategoria.textContent = this.categoria;
+
+      card.appendChild(img);
+      card.appendChild(h3);
+      card.appendChild(pDescripcion);
+      card.appendChild(pPrecio);
+      card.appendChild(button);
+      card.appendChild(hr);
+      card.appendChild(pCategoria);
+
+      productDiv.appendChild(card);
+
+      return productDiv;
+  }
+
+  show(etiqueta) {
+      const container = document.querySelector(etiqueta);
+      if (container) {
+          container.appendChild(this.toElement());
+      }
+  }
     
      /**
    * Obtiene los productos del json
