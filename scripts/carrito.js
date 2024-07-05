@@ -21,36 +21,67 @@ class Carrito {
    
     mostrarCarrito() {
         const modalBody = document.querySelector('.modal-content .modal-body');
-        
-        if (modalBody && Array.isArray(this.productos) && this.productos.length > 0) {
+    
+        if (modalBody) {
             modalBody.innerHTML = '';
-            //Por cada producto que se agregue, lo muestra en el modal
-            this.productos.forEach(producto => {
-                const { nombre, imagen, cantidad, precio } = producto;
+    
+            if (Array.isArray(this.productos) && this.productos.length > 0) {
+                // Por cada producto que se agregue, lo muestra en el modal
+                this.productos.forEach(producto => {
+                    const { nombre, imagen, cantidad, precio } = producto;
+    
+                    if (nombre && imagen && cantidad !== undefined && precio !== undefined) {
+                        // contenedor del producto
+                        const productDiv = document.createElement('div');
+                        productDiv.style.display = 'flex';
+    
+                        // imágen del producto
+                        const productImg = document.createElement('img');
+                        productImg.src = imagen;
+                        productImg.alt = nombre;
+                        productImg.style.width = '50px';
+                        productImg.style.height = '50px';
+    
+                        // descripción del producto
+                        const productDescription = document.createElement('p');
+                        productDescription.textContent = `${nombre} - ${cantidad} x $${precio.toFixed(2)} = $${(precio * cantidad).toFixed(2)}`;
+    
+                        const productosCantidad = document.querySelector('#productos-total-WEB');
 
-                if (nombre && imagen && cantidad !== undefined && precio !== undefined) {
-                    const div = document.createElement('div');
-                    div.innerHTML = `
-                    <div style="display:flex;"> 
-                    <img src="${imagen}" alt="${nombre}" style="width: 50px; height: 50px;">
-                        <p>${nombre} - ${cantidad} x $${precio.toFixed(2)} = $${(precio * cantidad).toFixed(2)}</p>
-                    </div>
-                    `;
-                    modalBody.appendChild(div);
-                } else {
-                    console.error('Error:', producto);
-                }
-        });
+                        if(productosCantidad){
+                            productosCantidad.innerText =  `Productos: ${cantidad}`;
+                        }
 
+                        // agrega imagen y descripción al contenedor
+                        productDiv.appendChild(productImg);
+                        productDiv.appendChild(productDescription);
+
+                        modalBody.appendChild(productDiv);
+                    }
+                });
+            } else {
+                const emptyMessage = document.createElement('p');
+                emptyMessage.textContent = 'El carrito está vacío';
+                modalBody.appendChild(emptyMessage);
+            }
+        
         const total = this.calcularTotal();
 
         const totalElement = document.querySelector('#carrito-total');
-        if (totalElement) {
+        const totalWebElement = document.querySelector('#carrito-total-WEB');
+        
+        if (totalElement || totalWebElement) {
             totalElement.innerText = `Total: $${total}`;
+            totalWebElement.innerText= `Total: $${total}`;
         } 
         } else {
             if (modalBody) {
-                modalBody.innerHTML = '<p>El carrito está vacío</p>';
+                  
+                    const parrafo = document.createElement('p');
+                    
+                    parrafo.textContent = 'El carrito está vacío';
+        
+                    modalBody.appendChild(parrafo);
             } 
             const totalElement = document.querySelector('#carrito-total');
             if (totalElement) {
